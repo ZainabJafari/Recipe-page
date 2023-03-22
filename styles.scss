@@ -105,6 +105,7 @@ ul li a {
 
 /* Main */
 
+
 .mat {
     display: flex;
     flex-direction: row;
@@ -116,10 +117,27 @@ ul li a {
 
 }
 
-.mat img {
-    width: 300px;
+.main_del_one_photo{
+    width: 250px;
     border-radius: 160px;
-    border: 1px solid black;
+    position: relative;
+    // opacity: .9;
+}
+
+.main_del_one_p{
+
+    // color: rgb(109, 81, 27);
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 20px;
+    z-index: 1;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    padding: 5px;
+    inline-size: 190px;
+    background-color: rgb(248, 151, 25);
+    // overflow: hidden;
 }
 
 .mat a {
