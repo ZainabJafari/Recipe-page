@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#baner {
+    background: url(bilder/bild5.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 100px;
+    font-size: 110px;
+    font-style: italic;
+    background-color: black;
+    text-shadow: 1px 1px 1px orange;
+}
+
+
+.baner-btn {
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.baner-btn a {
+    width: 150px;
+    color: white;
+
+    margin: 10px;
+    background-color: rgb(21, 16, 7);
+    padding: 15px;
+    text-decoration: none;
+    border: 0.5 solid rgb(13, 12, 11);
+    background-color: orange;
+    font-size: 40px;
+    padding-left: 50px;
+
+}
+
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: orange;
+    z-index: 2;
+    right: -250px;
+    transition: 0.3s;
+
+}
+
+ul li {
+    list-style: none;
+    margin: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+#menubtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    width: 70px;
+    height: 50px;
+    margin-top: 100px;
+    border-radius: 40px;
+
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 500px;
+
+}
+
+
+
+/* Main */
+
+.mat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    table-layout: auto;
+    font-size: 20px;
+    margin-top: 50px;
+
+}
+
+.mat img {
+    width: 300px;
+    border-radius: 160px;
+    border: 1px solid black;
+}
+
+.mat a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+
+.dryck {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    table-layout: auto;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.dryck img {
+    width: 300px;
+    border-radius: 160px;
+    border: 1px solid black;
+}
+
+.dryck a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* footer */
+
+
+#footer {
+    padding: 40px;
+    background-color: rgb(248, 171, 27);
+
+}
+
+
+.footer-row {
+    display: flex;
+    justify-content: left;
+    font-size: larger;
+}
+
+
+/* Dryck */
+.drink{
+    background-color: azure;
+}
+
+.smoothie {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(184, 182, 182);
+
+}
+
+
+.smoothie div {
+    font-size: 20px;
+}
+
+.smoothie img{
+    width: 400px;
+    border-radius: 50px;
+}
+
+
+
+.mango {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(181, 160, 160);
+}  
+
+
+.mango div {
+    font-size: 20px;
+}
+
+
+.mango img{
+    width: 400px;
+    border-radius: 50px;
+}
+
+.jord {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(208, 201, 201);
+
+}
+
+
+.jord div {
+    font-size: 20px;
+}
+
+.jord img{
+    width: 400px;
+    border-radius: 50px;
+    margin-left: 40px;
+}
+
+
+.Blåbärssmoothie {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(209, 188, 188);
+}
+.Blåbärssmoothie li{
+    border: 1px solid rgb(248, 237, 237);
+}
+
+
+.Blåbärssmoothie div {
+    font-size: 20px;
+}
+
+.Blåbärssmoothie img{
+    width: 400px;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+
+/* Mat */
+
+.kyckling {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(222, 191, 152);
+}
+
+.kyckling img {
+    width: 500px;
+    height: 500px;
+    border-radius: 80px;
+}
+
+.kyckling-text {
+    font-size: 30px;
+    padding: 50px;
+}
+
+
+.kyckling-innehål li {
+    font-size: 23px;
+    list-style-type: circle;
+    border: 1px solid rgb(248, 237, 237);
+}
+
+.kyckling-innehål h2 {
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+
+}
+
+
+.kyckling2 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+
+
+.step li {
+    background-color: white;
+    font-size: 23px;
+    padding: 20px;
+    margin-left: 100px;
+    border: 1px solid rgb(248, 237, 237);
+
+}
+
+.step h2 {
+    padding-left: 100px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+
+.torsk {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(248, 245, 196);
+}
+
+.torsk img {
+    width: 500px;
+    height: 500px;
+    border-radius: 80px;
+}
+
+.torsk-text{
+    font-size: 30px;
+    padding: 60px;
+
+}
+
+
+
+
+.torsk2 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.torsk-innehål li {
+    font-size: 23px;
+    list-style-type: circle;
+    border: 1px solid rgb(178, 234, 212);
+}
+
+.torsk-innehål h2 {
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+
+}
+
+
+.torsk-step li {
+    background-color: white;
+    font-size: 23px;
+    padding: 20px;
+    margin-left: 100px;
+    border: 1px solid rgb(243, 244, 165);
+}
+
+.torsk-step h2 {
+
+    padding-left: 100px;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+
+.pasta {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 230, 211);
+}
+
+.pasta img {
+    width: 500px;
+    height: 500px;
+    border-radius: 80px;
+}
+
+.pasta-text {
+    font-size: 30px;
+    padding: 50px;
+}
+
+
+.pasta-innehål li {
+    font-size: 23px;
+    list-style-type: circle;
+    border: 1px solid rgb(248, 237, 237);
+}
+
+.pasta-innehål h2 {
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+
+}
+
+.pasta2 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+
+
+.pasta-step li {
+    background-color: white;
+    font-size: 23px;
+    padding: 20px;
+    margin-left: 100px;
+    border: 1px solid rgb(248, 237, 237);
+
+}
+
+.pasta-step h2 {
+    padding-left: 100px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+.lasane {
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+
+}
+
+.lasane img {
+    width: 500px;
+    height: 500px;
+    border-radius: 80px;
+}
+
+.lasane-text {
+    font-size: 30px;
+    padding: 50px;
+}
+
+
+.lasane-innehål li {
+    font-size: 23px;
+    list-style-type: circle;
+    border: 1px solid rgb(248, 237, 237);
+}
+
+.lasane-innehål h2 {
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+
+}
+
+.lasane2 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+
+
+.lasane-step li {
+    background-color: white;
+    font-size: 23px;
+    padding: 20px;
+    margin-left: 100px;
+    border: 1px solid rgb(248, 237, 237);
+
+}
+
+.lasane-step h2 {
+    padding-left: 100px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+.recept{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    table-layout: auto;
+    font-size: 20px;
+    margin-top: 50px;
+
+}
+
+.recept img{
+    width: 400px;
+    border: 1px solid black;
+
+}
+
+.recept a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitta recept</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <section id="baner">
+      <div>
+        <h1>Hitta ditt recept</h1>
+      </div>
+
+      <div class="baner-btn">
+        <a href="#main">Recept</a>
+        <a href="drycka.html" target="_blank">Dryck</a>
+      </div>
+
+      <section>
+        <div id="sideNav">
+          <nav>
+            <ul>
+              <li><a href="#baner">Hem</a></li>
+              <li><a href="#main">Recept</a></li>
+              <li><a href="drycka.html" target="_blank">Dryck</a></li>
+              <li><a href="#footer">Kontakta oss</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="menubtn">
+          <img src="bilder/menu2.png" id="menu">
+        </div>
+
+
+        <script>
+          let menubtn = document.getElementById("menubtn")
+          let menu = document.getElementById("menu")
+          let sideNav = document.getElementById("sideNav")
+
+          sideNav.style.right = "-250px"
+          menubtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+              sideNav.style.right = "0"
+              menu.src = "bilder/close.png";
+            }
+            else {
+              sideNav.style.right = "-250px"
+              menu.src = "bilder/menu2.png";
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+              speed: 500,
+              speedAsDuration: true
+            });
+          }
+        </script>
+      </section>
+
+    </section>
+  </header>
+
+
+  <main id="main">
+
+    <section class="mat">
+
+      <article>
+        <div>
+          <a href="lasane.html"> <label>Kalkonfärslasagne med hjärtsallad</label></a>
+          <a href="lasane.html" target="_blank"><img src="bilder/lasane.jpg" alt="lasane"> </a>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <a href="torsk.html"> <label> Stekt torsk med dillmajonnäs och sockerärtor</label></a>
+          <a href="torsk.html" target="_blank"><img src="bilder/stekt_torsk.jpg" alt="torsk"></a>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <a href="pasta.html"> <label>Pasta med paprikapesto och salami</label></a>
+          <a href="pasta.html" target="_blank"><img src="bilder/pasta.jpg" alt="pasta"></a>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <a href="kyckling.html"> <label>Kycklingklubba med krämig potatis</label></a>
+          <a href="kyckling.html" target="_blank"><img src="bilder/kycklingklubba.jpg" alt="kyckling"></a>
+        </div>
+      </article>
+    </section>
+
+
+    <section class="dryck">
+      <div>
+        <a href="drycka.html"> <label>Grönkålssmoothie med mango</label></a>
+        <a href="drycka.html " target="_blank"><img src="bilder/d1.jpg" alt="d1"></a>
+      </div>
+      <div>
+        <a href="drycka.html"> <label>Smoothie med passionsfrukt, mango och ananas</label></a>
+        <a href="drycka.html" target="_blank"><img src="bilder/d2.jpg" alt="d2"></a>
+      </div>
+      <div>
+        <a href="drycka.html"> <label>Jordgubbssmoothie med äppelmust och lime</label></a>
+        <a href="drycka.html" target="_blank"><img src="bilder/d3.jpg" alt="d3"></a>
+      </div>
+      <div>
+        <a href="drycka.html"> <label>Blåbärssmoothie med vanilj</label></a>
+        <a href="drycka.html" target="_blank"><img src="bilder/d4.jpg" alt="d4"></a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <section id="footer">
+
+    <div class="footer-row">
+      <div class="footer-left">
+        <h2>Kontakta oss</h2>
+        <h3>Jobba hos oss</h3>
+        <p> Tel: 0700 00 000 </p>
+        <p>Sverige Stockholm </p>
+        <p>Mail: recept.se</p>
+        <p></p><br>
+        <img class="om" style="width :30px;" src="bilder/insta.webp" alt="">
+        <img style="width:30px" src="bilder/face.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
