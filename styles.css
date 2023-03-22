@@ -18,7 +18,7 @@ h1 {
   font-size: 110px;
   font-style: italic;
   background-color: black;
-  text-shadow: 1px 1px 1px orange;
+  text-shadow: 1px 1px 1px rgb(239, 169, 40);
 }
 
 .baner-btn {
@@ -235,21 +235,30 @@ ul li a {
 }
 
 /* Mat */
-.kyckling {
+.header {
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(222, 191, 152);
 }
 
-.kyckling img {
-  width: 500px;
-  height: 500px;
-  border-radius: 80px;
+.food_photo {
+  width: 500pxpx;
+  height: 120vh;
 }
 
-.kyckling-text {
-  font-size: 30px;
-  padding: 50px;
+.food_text {
+  float: right;
+  inline-size: 400px;
+  padding: 60px;
+  position: relative;
+}
+
+.food_info {
+  display: flex;
+  float: right;
+  inline-size: 450px;
+}
+.food_info p {
+  padding: 20px;
+  background-color: blanchedalmond;
 }
 
 .kyckling-innehål li {
