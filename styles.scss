@@ -4,7 +4,7 @@
 }
 
 #baner {
-    background: url(bilder/bild5.jpeg);
+    background: url(img/bild5.jpeg);
     background-size: cover;
     background-position: center;
     height: 110vh;
@@ -149,29 +149,39 @@ ul li a {
 
 
 
-.dryck {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 25px;
-    table-layout: auto;
-    font-size: 20px;
-    margin-top: 10px;
 
-}
 
-.dryck img {
-    width: 300px;
-    border-radius: 160px;
-    border: 1px solid black;
-}
 
-.dryck a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-}
+
+
+
+
+
+
+
+// .dryck {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     padding: 25px;
+//     table-layout: auto;
+//     font-size: 20px;
+//     margin-top: 10px;
+
+// }
+
+// .dryck img {
+//     width: 300px;
+//     border-radius: 160px;
+//     border: 1px solid black;
+// }
+
+// .dryck a {
+//     text-decoration: none;
+//     color: black;
+//     font-size: 18px;
+//     font-weight: bold;
+// }
 
 /* footer */
 
@@ -301,11 +311,6 @@ ul li a {
     margin-top: 30px;
 
 }
-
-// .kyckling-text {
-//     font-size: 30px;
-//     padding: 50px;
-// }
 
 .food_info{
     display: flex;
