@@ -1,0 +1,55 @@
+
+.header{
+    display: flex;
+}
+.food_photo{
+ width: 500pxpx;
+ height: 120vh;
+}
+
+.food_text{
+    float: right; 
+    inline-size: 400px;
+    padding: 60px;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.food_info{
+    display: flex;
+    float: right;
+    inline-size: 380px;
+    margin-top: 30px;
+    padding-left: 190px;
+
+    p{
+        padding: 20px;
+        background-color: rgb(241, 210, 178);
+        // margin-left: 60px;
+    }
+}
+
+#star{
+    background-color: rgb(237, 211, 184);
+    display: inline;
+    padding: 3px;
+
+}
+
+.food_recept{
+    display: flex;
+}
+
+.food_method h2{
+    margin: 10px 0px 40px 90px
+}
+
+.food_method li {
+    margin-left: 100px;
+    border: 1px solid rgb(231, 222, 222);
+    padding: 6px;
+    background-color: rgb(242, 247, 247);
+    list-style-type: circle;
+}
+
