@@ -1,6 +1,7 @@
 @import "partials/footer";
 @import "partials/underside";
 @import "partials/createAccount";
+@import "partials/variables";
 
 
 
@@ -8,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    // font-family: sans-serif;
 }
 
 #baner {
@@ -15,6 +17,7 @@
     background-size: cover;
     background-position: center;
     height: 110vh;
+    // position: relative;
 }
 
 .hemSidan_h1 {
@@ -45,57 +48,97 @@
     padding: 15px;
     text-decoration: none;
     border: 0.5 solid rgb(13, 12, 11);
-    background-color: orange;
+    background-color: $thirdColor;
     font-size: 40px;
     padding-left: 50px;
 
 }
 
+#sideNav{
+    display: flex;
+    // justify-content: space-;
+    background-color: $thirdColor ;
+    overflow: hidden;
 
-#sideNav {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: orange;
-    z-index: 2;
-    right: -250px;
-    transition: 0.3s;
 
+    
+    li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+    }
+
+    
+    li{
+        padding-top: 20px;
+        list-style: none;
+        padding: 16px;
+        float: left;
+        // border-right:1px solid #bbb
+    }
+    li:last-child {
+        border-right: none;
+        // float: right;
+    }
 }
 
-ul li {
-    list-style: none;
-    margin: 50px;
-}
 
-ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-}
+// #log_in{
+//    display: flex;
+//    justify-self:right;
+//     float: right;
+//     padding-right: 200px;
+//     // padding-top: 4px;
+//     color: aliceblue;
+// }
 
 
-#menubtn {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    position: fixed;
-    right: 40px;
-    top: 20px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
-}
+// #sideNav {
+//     width: 250px;
+//     height: 100vh;
+//     position: fixed;
+//     right: 0;
+//     top: 0;
+//     background-color: orange;
+//     z-index: 2;
+//     right: -250px;
+//     transition: 0.3s;
 
-#menubtn img {
-    width: 70px;
-    height: 50px;
-    margin-top: 100px;
-    border-radius: 40px;
+// }
 
-}
+// ul li {
+//     list-style: none;
+//     margin: 50px;
+// }
+
+// ul li a {
+//     text-decoration: none;
+//     color: white;
+//     font-size: 25px;
+// }
+
+
+// #menubtn {
+//     width: 50px;
+//     height: 50px;
+//     text-align: center;
+//     position: fixed;
+//     right: 40px;
+//     top: 20px;
+//     border-radius: 3px;
+//     z-index: 3;
+//     cursor: pointer;
+// }
+
+// #menubtn img {
+//     width: 70px;
+//     height: 50px;
+//     margin-top: 100px;
+//     border-radius: 40px;
+
+// }
 
 .title-text p {
     margin: auto;
@@ -103,7 +146,7 @@ ul li a {
     color: black;
     font-weight: bold;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: $forthColor;
     margin-top: 500px;
 
 }
@@ -136,7 +179,9 @@ ul li a {
     font-size: 16px;
     padding: 5px;
     inline-size: 190px;
-    background-color: rgb(248, 151, 25);
+    background-color: $thirdColor;
+    color: white;
+   
 }
 
 
