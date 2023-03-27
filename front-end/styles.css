@@ -1,5 +1,6 @@
 #footer {
   padding: 40px;
+  background-color: #044a42;
 }
 
 .footer-row {
@@ -59,17 +60,21 @@
   list-style-type: circle;
 }
 
-.wrapper {
-  display: grid;
-  place-items: center;
+.validation-form {
+  width: 400px;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #d8d8d8;
 }
 
-.validation-form {
-  width: 500px;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #d8d8d8;
+.register_text {
+  float: right;
+  inline-size: 400px;
+  padding: 60px;
+  position: relative;
+  margin-top: 3px;
+  padding-top: 1px;
 }
 
 .headline {
