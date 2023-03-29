@@ -60,31 +60,32 @@
   list-style-type: circle;
 }
 
-.validation-form {
-  width: 400px;
-  background-color: #ffffff;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  border: 1px solid #d8d8d8;
+#registerPage_photo {
+  width: 50%;
+  height: 100vh;
+  margin-top: 50px;
 }
 
 .register_text {
   float: right;
-  inline-size: 400px;
+  inline-size: 440px;
   padding: 60px;
   position: relative;
-  margin-top: 3px;
+  margin-top: 50px;
   padding-top: 1px;
+}
+
+.validation-form {
+  background-color: #ffffff;
+  padding: 10px 35px 1px 20px;
+  border-radius: 0.5rem;
+  border: 1px solid #d8d8d8;
 }
 
 .headline {
   text-align: center;
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 1rem;
-}
-
-.form-content {
-  padding-top: 1rem;
 }
 
 .input-group {
@@ -121,7 +122,6 @@
 .btn-primary {
   background-color: hsl(180, 25%, 25%);
   color: #ffffff;
-  transition: background 70ms;
 }
 
 .btn-primary:hover,
