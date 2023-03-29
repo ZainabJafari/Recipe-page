@@ -1,6 +1,6 @@
 #footer {
   padding: 40px;
-  background-color: #044a42;
+  background-color: orange;
 }
 
 .footer-row {
@@ -167,13 +167,13 @@
   background: url(img/bild5.jpeg);
   background-size: cover;
   background-position: center;
-  height: 110vh;
+  height: 100vh;
 }
 
 .hemSidan_h1 {
   text-align: center;
   color: whitesmoke;
-  padding-top: 100px;
+  padding-top: 20px;
   font-size: 110px;
   font-style: italic;
   background-color: black;
@@ -194,14 +194,14 @@
   padding: 15px;
   text-decoration: none;
   border: 0.5 solid rgb(13, 12, 11);
-  background-color: rgba(235, 157, 13, 0.954);
+  background-color: rgb(225, 162, 43);
   font-size: 40px;
   padding-left: 50px;
 }
 
 #sideNav {
   display: flex;
-  background-color: rgba(235, 157, 13, 0.954);
+  background-color: rgb(225, 162, 43);
   overflow: hidden;
 }
 #sideNav li a {
@@ -212,9 +212,8 @@
   text-decoration: none;
 }
 #sideNav li {
-  padding-top: 20px;
   list-style: none;
-  padding: 16px;
+  padding: 9px;
   float: left;
 }
 #sideNav li:last-child {
@@ -236,11 +235,11 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  background-color: bisque;
 }
 
 .main_del_one_photo {
   width: 250px;
-  border-radius: 160px;
   position: relative;
 }
 
@@ -252,8 +251,8 @@
   font-weight: bold;
   font-style: italic;
   font-size: 16px;
-  padding: 5px;
+  padding: 10px;
   inline-size: 190px;
-  background-color: rgba(235, 157, 13, 0.954);
-  color: white;
+  background-color: rgb(225, 162, 43);
+  color: black;
 }/*# sourceMappingURL=styles.css.map */
