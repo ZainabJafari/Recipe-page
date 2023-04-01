@@ -21,11 +21,15 @@
       </style>
       <nav>
           <ul id="sideNav">
+            <li id="logo"><p>Ditt Recept</p></li>
             <li><a href="#baner">Hem</a></li>
             <li><a href="#main">Recept</a></li>
             <li><a href="drycka.html" target="_blank">Dryck</a></li>
-            <li><a href="#footer">Kontakta oss</a></li>
-            <li><a style="float: left;" class="active" href="#about">About</a></li>
+            <li><a href="#footer"> Kontakta oss</a></li>
+            <li><a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>   logga in</a></li>
           </ul>
           <!-- <li><a id="log_in" href="logga in">logga in</a></li> -->
       </nav>
@@ -102,45 +106,61 @@
 
     </section>
 
-    <!-- 
-    <section class="dryck">
+    <div class="header">
+
       <div>
-        <a href="drycka.html"> <label>Grönkålssmoothie med mango</label></a>
-        <a href="drycka.html " target="_blank"><img src="/img/kycklingklubba.jpg" alt="d1"></a>
-      </div>
-      <div>
-        <a href="drycka.html"> <label>Smoothie med passionsfrukt, mango och ananas</label></a>
-        <a href="drycka.html" target="_blank"><img src="/img/kycklingklubba.jpg" alt="d2"></a>
-      </div>
-      <div>
-        <a href="drycka.html"> <label>Jordgubbssmoothie med äppelmust och lime</label></a>
-        <a href="drycka.html" target="_blank"><img src="/img/kycklingklubba.jpg" alt="d3"></a>
-      </div>
-      <div>
-        <a href="drycka.html"> <label>Blåbärssmoothie med vanilj</label></a>
-        <a href="drycka.html" target="_blank"><img src="/img/kycklingklubba.jpg" alt="d4"></a>
+        <img class="main_part_two_photo" src="img/d3.jpg" alt="">
       </div>
 
-    </section> -->
+      <div>
+        <p class="main_part_two_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum minus sequi ducimus eaque veritatis modi. Numquam, facere deserunt. Consectetur voluptates minima nihil voluptas provident ex error in, iusto repudiandae.</p>
+      </div>
+    </div>
 
   </main>
 
-  <section id="footer">
 
-    <div class="footer-row">
-      <div class="footer-left">
-        <h2>Kontakta oss</h2>
-        <h3>Jobba hos oss</h3>
-        <p> Tel: 0700 00 000 </p>
-        <p>Sverige Stockholm </p>
-        <p>Mail: recept.se</p>
-        <p></p><br>
-        <img class="om" style="width :30px;" src="bilder/insta.webp" alt="">
-        <img style="width:30px" src="bilder/face.png" alt="">
+  <footer class="footer-container">
+    <div class="footer-wrapper">
+      <div>
+        <p id="logo">Ditt Recept</p>
       </div>
+      <div class="footer-info">
+        <div>
+          <h3>Sociala Medier</h3>
+          <a class="footer-länkar" href="https://www.facebook.com/"
+            >Facebook</a
+          >
+          <a class="footer-länkar" href="https://www.instagram.com/"
+            >Instagram</a
+          >
+          <a class="footer-länkar" href="https://twitter.com/?lang=sv"
+            >Twitter</a
+          >
+        </div>
+        <div>
+          <h3>Länkar</h3>
+          <a class="footer-länkar" href="startsida.html">Startsida</a>
+          <a class="footer-länkar" href="omoss.html">Om oss</a>
+          <a class="footer-länkar" href="produktsida.html">Produktsida</a>
+          <a class="footer-länkar" href="referenser.html">Referenser</a>
+          <a class="footer-länkar" href="kontakt.html">Kontakt</a>
+        </div>
+        <div>
+          <h3 class="h3-kontakt">Kontakt</h3>
+          <p>
+            Hitta ditt recept <br />
+            Herrgård 50 123 <br />
+            +46(0)733-001234 <br />
+            dittrecept@gmail.com
+          </p>
+        </div>
+      </div>
+    
     </div>
-  </section>
+  </footer>
 
+  
 
   <script src="script.js"></script>
 </body>

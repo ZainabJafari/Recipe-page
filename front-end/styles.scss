@@ -27,7 +27,7 @@
     font-size: 110px;
     font-style: italic;
     background-color: black;
-    text-shadow: 1px 1px 1px rgb(239, 169, 40);
+    text-shadow: 1px 1px 1px $thirdColor;
 }
 
 
@@ -54,34 +54,47 @@
 
 }
 
-#sideNav{
+#sideNav {
     display: flex;
-    // justify-content: space-;
+    // justify-content: space-between;
     background-color: $thirdColor ;
     overflow: hidden;
 
 
-    
+
     li a {
-            display: block;
-            color:white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
 
-    
-    li{
+
+    li {
         // padding-top: 20px;
         list-style: none;
         padding: 9px;
         float: left;
         // border-right:1px solid #bbb
     }
+
     li:last-child {
-        border-right: none;
-        // float: right;
+        // border-right: none;
+        padding-left: 500px;
+
+
     }
+}
+
+#logo {
+    width: 30px;
+    margin: 4px 20px 10px 20px;
+    color: rgb(62, 54, 38);
+    text-shadow: 1px rgb(27, 21, 9) 1px;
+    font-weight: bold;
+    font-style: italic;
+
 }
 
 
@@ -156,40 +169,43 @@
 /* Main */
 
 
-.food_part{
+.food_part {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: bisque;
+    background-color: rgb(233, 246, 228);
 
 }
 
 
-.main_del_one_photo{
+.main_del_one_photo {
     width: 250px;
-    // border-radius: 160px;
+    border-radius: 160px;
     position: relative;
 }
 
-.main_del_one_p{
+.main_del_one_p {
     position: absolute;
-    margin-top: 220px;
-    margin-left: 20px;
+    margin-top: 244px;
+    margin-left: 30px;
     z-index: 1;
     font-weight: bold;
     font-style: italic;
     font-size: 16px;
     padding: 10px;
     inline-size: 190px;
-    background-color: $thirdColor;
+    // background-color: $thirdColor;
     color: black;
-    // border-radius: 20px 10px;
-   
+    border-radius: 20px 10px;
+
 }
 
+.main_part_two_photo{
+    margin-top: 100px;
+    width: 500px;
 
-
-
-
-
-
+}
+.main_part_two_p{
+    margin-top: 100px;
+    padding: 200px;
+}

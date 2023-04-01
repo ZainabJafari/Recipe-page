@@ -1,15 +1,59 @@
 @import "variables";
 
 
-#footer {
-    padding: 40px;
-    background-color: orange;
 
+.footer-container {
+    // @include footer($footerColor);
+    min-height: 350px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: auto;
 }
 
-
-.footer-row {
+.footer-wrapper {
+    position: relative;
+    min-height: 350px;
+    min-width: 450px;
     display: flex;
-    justify-content: left;
-    font-size: larger;
+    justify-content: space-evenly;
+    // flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-wrapper>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+    color: rgb(32, 5, 5);
+    // @include font($fontstyle);
+    margin: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    text-align: center;
+}
+
+// div {
+//   border: 4px solid black;
+// }
+
+.footer-länkar {
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(136, 58, 58);
+    display: block;
+}
+
+.footer-länkar:hover {
+    color: #2ecc71;
+}
+
+.h3-kontakt {
+    margin-bottom: 10px;
 }

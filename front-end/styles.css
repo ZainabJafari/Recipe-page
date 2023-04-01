@@ -1,12 +1,50 @@
-#footer {
-  padding: 40px;
-  background-color: orange;
+@charset "UTF-8";
+.footer-container {
+  min-height: 350px;
+  width: 100%;
+  font-size: 15px;
+  margin-top: auto;
 }
 
-.footer-row {
+.footer-wrapper {
+  position: relative;
+  min-height: 350px;
+  min-width: 450px;
   display: flex;
-  justify-content: left;
-  font-size: larger;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-wrapper > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-wrap: wrap;
+  color: rgb(32, 5, 5);
+  margin: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  text-align: center;
+}
+
+.footer-länkar {
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(136, 58, 58);
+  display: block;
+}
+
+.footer-länkar:hover {
+  color: #2ecc71;
+}
+
+.h3-kontakt {
+  margin-bottom: 10px;
 }
 
 .header {
@@ -177,7 +215,7 @@
   font-size: 110px;
   font-style: italic;
   background-color: black;
-  text-shadow: 1px 1px 1px rgb(239, 169, 40);
+  text-shadow: 1px 1px 1px rgb(143, 225, 143);
 }
 
 .baner-btn {
@@ -194,14 +232,14 @@
   padding: 15px;
   text-decoration: none;
   border: 0.5 solid rgb(13, 12, 11);
-  background-color: rgb(225, 162, 43);
+  background-color: rgb(143, 225, 143);
   font-size: 40px;
   padding-left: 50px;
 }
 
 #sideNav {
   display: flex;
-  background-color: rgb(225, 162, 43);
+  background-color: rgb(143, 225, 143);
   overflow: hidden;
 }
 #sideNav li a {
@@ -217,7 +255,16 @@
   float: left;
 }
 #sideNav li:last-child {
-  border-right: none;
+  padding-left: 500px;
+}
+
+#logo {
+  width: 30px;
+  margin: 4px 20px 10px 20px;
+  color: rgb(62, 54, 38);
+  text-shadow: 1px rgb(27, 21, 9) 1px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .title-text p {
@@ -235,24 +282,35 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: bisque;
+  background-color: rgb(233, 246, 228);
 }
 
 .main_del_one_photo {
   width: 250px;
+  border-radius: 160px;
   position: relative;
 }
 
 .main_del_one_p {
   position: absolute;
-  margin-top: 220px;
-  margin-left: 20px;
+  margin-top: 244px;
+  margin-left: 30px;
   z-index: 1;
   font-weight: bold;
   font-style: italic;
   font-size: 16px;
   padding: 10px;
   inline-size: 190px;
-  background-color: rgb(225, 162, 43);
   color: black;
+  border-radius: 20px 10px;
+}
+
+.main_part_two_photo {
+  margin-top: 100px;
+  width: 500px;
+}
+
+.main_part_two_p {
+  margin-top: 100px;
+  padding: 200px;
 }/*# sourceMappingURL=styles.css.map */
