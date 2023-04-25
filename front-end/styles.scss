@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    // font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #baner {
@@ -33,7 +33,7 @@
 }
 
 
-.baner-btn {
+.header_section {
     margin: 10px auto 0;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
 
 
 
-.baner-btn a {
+.baner_section_a{
     width: 150px;
     color: rgb(237, 232, 232);
 
@@ -51,9 +51,12 @@
     text-decoration: none;
     // border: 0.5 solid rgb(13, 12, 11);
     background-color: $thirdColor;
-    font-size: 40px;
-    padding-left: 50px;
-
+    font-size: 22px;
+    // padding-left: 50px;
+    text-align: center;
+}
+.baner_section_a:hover{
+    color: rgb(67, 152, 124);
 }
 
 #sideNav {
@@ -67,7 +70,7 @@
         display: block;
         color: rgb(31, 79, 7);
         text-align: center;
-        padding: 12px;
+        padding: 13px;
         text-decoration: none;
         font-size: 18px;
     }
@@ -89,6 +92,12 @@
 
     }
 }
+
+// #sideNav:hover{
+//     text-decoration: underline;
+
+//     color: aqua;
+// }
 
 
 
@@ -193,7 +202,7 @@
     width: 200px;
     // border-radius: 160px;
     position: relative;
-    opacity: .9;
+    // opacity: .9;
 }
 
 .main_del_one_photo:hover{
