@@ -101,19 +101,9 @@
   list-style-type: circle;
 }
 
-#registerPage_photo {
-  width: 50%;
-  height: 100vh;
-  margin: 50px 0px 0px 50px;
-}
-
 .register_text {
-  float: right;
-  inline-size: 400px;
+  width: 50%;
   padding: 60px;
-  position: relative;
-  margin-top: 50px;
-  padding-top: 1px;
 }
 
 .validation-form {
@@ -121,7 +111,6 @@
   padding: 10px 35px 1px 20px;
   border-radius: 0.5rem;
   border: 1px solid #d8d8d8;
-  margin-bottom: 100px;
 }
 
 .headline {
@@ -162,7 +151,7 @@
 }
 
 .btn-primary {
-  background-color: hsl(113, 75%, 38%);
+  background-color: #66bb6a;
   color: #ffffff;
 }
 
@@ -200,11 +189,35 @@
   display: none;
 }
 
+.log-in-part {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  float: right;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #d8d8d8;
+  margin: 80px 80px 20px 20px;
+  background-color: #cbedcd;
+}
+.log-in-part h2 {
+  text-align: center;
+  padding: 5px;
+}
+.log-in-part input {
+  padding: 5px;
+}
+.log-in-part button {
+  padding: 5px;
+  background-color: #66bb6a;
+  cursor: pointer;
+}
+
 .form-container {
-  height: 80%;
+  width: 60%;
   padding: 20px 100px;
-  margin-bottom: 450px;
-  margin-top: 100px;
+  margin-bottom: 50px;
+  margin: 30px 100px;
+  background-color: rgb(174, 217, 187);
 }
 
 .contact-box {
@@ -212,11 +225,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #fff;
-}
-
-.right {
-  padding: 25px 40px;
+  background-color: #c8d7c4;
 }
 
 .kontakth2 {
