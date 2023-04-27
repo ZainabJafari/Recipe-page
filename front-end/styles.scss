@@ -30,7 +30,7 @@
 }
 
 .main_del_one_photo:hover{
-    opacity: .6;
+    opacity: .9;
 }
 
 .main_del_one_p {
@@ -63,13 +63,13 @@
 .main_part_two_photo {
     margin-top: 130px;
     width: 500px;
-    margin-left: 20px;
+    margin-left: 50px;
 
 }
 
 .main_part_two_p {
-    padding: 140px;
-    font-size: 18px;
+    padding: 145px;
+    font-size: 16px;
 }
 
 #video_home_page {
@@ -80,22 +80,10 @@
 #contact-box {
     display: grid;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    background-color: #2ecc71;
-    margin-top: 60px;
-}
-.right {
-    display: grid;
-    display: flex;
-    flex-direction: column;
     background-color: #2ecc71;
 }
-
-.kontakth2 {
+.log-in-h2{
     position: relative;
-    padding-bottom: 10px;
     text-align: center;
     margin: 3rem;
     margin-bottom: 10px;

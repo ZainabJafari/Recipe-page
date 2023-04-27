@@ -14,16 +14,21 @@
   <section class="Header">
     <nav>
       <ul id="sideNav">
-        <li id="logo"><p> Ditt Recept</p> </li>
+        <li id="logo">
+          <p> Ditt Recept</p>
+        </li>
         <li><a href="home.html">Hem</a></li>
         <li><a href="ContactUs.html">Kontakta oss</a></li>
         <li><a href="createAccount.html"> Skapa konto</a></li>
-        <li><a href="createAccount.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-        </svg>   logga in</a></li>
+        <li><a href="createAccount.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg> logga in</a></li>
       </ul>
-  </nav>
+    </nav>
+
 
     <div>
       <div class="log-in-part">
@@ -31,7 +36,7 @@
         <input type="email" placeholder="Email">
         <input type="password" placeholder="Password">
         <button>Logga in</button>
-        <img src="img/pexels-photo-10832389.jpeg" alt="">
+        <img src="img/pexels-photo-10832389.jpeg" alt="bord">
       </div>
 
 
@@ -41,59 +46,207 @@
             <h1>Skapa konto</h1>
           </div>
           <div class="form-content">
-  
+
             <div class="input-group">
               <label for="firstName" class="input-label">First Name:</label>
               <input type="text" id="firstName" class="form-control">
               <small></small>
-  
+
             </div>
-  
+
             <div class="input-group">
               <label for="lastName" class="input-label">Last Name:</label>
               <input type="text" id="lastName" class="form-control">
               <small></small>
             </div>
-  
+
             <div class="input-group">
               <label for="email" class="input-label">Email:</label>
               <input type="email" id="email" class="form-control">
               <small></small>
             </div>
-  
+
             <div class="input-group">
               <label for="password" class="input-label">Password:</label>
               <input type="password" id="password" class="form-control">
               <small></small>
             </div>
-  
+
             <div class="input-group">
               <label for="repeatPassword" class="input-label">Repeat Password:</label>
               <input type="password" id="repeatPassword" class="form-control">
               <small></small>
             </div>
-  
+
             <div class="input-group">
               <input type="checkbox" id="terms">
               <label for="terms">Accept terms and conditions</label>
               <small></small>
             </div>
-  
+
             <div>
-              <button class="btn btn-block btn-primary">Validate</button>
+              <button class="btn btn-block btn-primary">Skapa konto</button>
             </div>
-  
+
           </div>
-  
+
           <div class="validation-feedback">
             <p id="errorMessage" class="d-none">Alla fält måste vara korrekt ifyllda!</p>
           </div>
-  
+
         </form>
       </div>
     </div>
-    
 
+    <script>
+      const form = document.querySelector("#validationForm")
+      const firstname = document.querySelector("#firstName")
+      const lastname = document.querySelector("#lastName")
+      const email = document.querySelector("#email")
+      const password = document.querySelector("#password")
+      const repeatPassword = document.querySelector("#repeatPassword")
+      const checkbox = document.querySelector("#terms")
+      const errorMessage = document.querySelector("#errorMessage")
+
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        const errorsArray = checkInputValue()
+
+        if (errorsArray.length > 0) {
+
+        }
+        else {
+          const user = {
+            firstname: firstname.value,
+            lastname: lastname.value,
+            email: email.value,
+            password: password.value,
+          }
+          console.log(user);
+
+        }
+
+      })
+
+      const errors = []
+
+      const checkInputValue = () => {
+
+        const firstnameValu = firstname.value.trim()
+        const lastnameValu = lastname.value.trim()
+        const emailValue = email.value.trim()
+        const passwordValue = password.value.trim()
+        const repeatPasswordValue = repeatPassword.value.trim()
+
+
+        const regText = /^[a-zAZ]{2,10}$/
+        if (firstnameValu === '') {
+          console.log('firstname måste ha ett värde');
+          errors.push(setError(firstname, 'Fylla på fältet'))
+        }
+        else if (!regText.test(firstnameValu)) {
+          console.log('Namnet får inte innehålla några siffror');
+          errors.push(setError(firstname, 'Namnet ska vara korrekt'))
+        }
+        else {
+          setSuccess(firstname)
+        }
+
+        if (lastnameValu === '') {
+          console.log('Efternamn måste ha ett värde');
+          errors.push(setError(lastname, 'Fyll på fälten'))
+        }
+        else if (lastnameValu.length < 2) {
+          console.log('Efternamnet måste ha mer än två bokstäver');
+          errors.push(setError(lastname, 'Efternamnet måste fyllas korrekt'))
+        }
+        else {
+          setSuccess(lastname)
+        }
+
+
+
+        const regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$/
+        if (emailValue === '') {
+          console.log('email måste ha ett värde');
+          errors.push(setError(email, 'Fyll på fältet'))
+        }
+        else if (!regEx.test(emailValue)) {
+          console.log('email måste fyllas korrekt');
+          errors.push(setError(email, 'email är ogiltig'))
+
+        }
+        else {
+          setSuccess(email)
+        }
+
+
+        if (passwordValue === '') {
+          console.log('password måste ha ett värde');
+          errors.push(setError(password, 'fylla på fältet'))
+        }
+        else if (passwordValue.length < 6) {
+          console.log('Lösenordet måste fyllas korrekt');
+          errors.push(setError(password, 'Lösenordet är ogiltig'))
+
+        }
+        else {
+          setSuccess(password)
+        }
+
+
+        if (repeatPasswordValue === '') {
+          console.log('repeatpassword måste ha ett värde');
+          errors.push(setError(repeatPassword, 'fyll på fältet'))
+        }
+        else if (passwordValue !== repeatPasswordValue) {
+          console.log('password matchar inte varandra');
+          errors.push(setError(repeatPassword, 'Lösenordet stämmer inte överens!'))
+        }
+        else {
+          setSuccess(repeatPassword)
+        }
+
+        if (!checkbox.checked) {
+          console.log('checkbox måste kryssas');
+          errors.push(setError(checkbox, 'kryssa in '))
+        }
+        else {
+          setSuccess(checkbox)
+        }
+
+
+        return errors
+
+      }
+
+
+
+      const setError = (input, message) => {
+        const inputGroup = input.parentElement
+        const small = inputGroup.querySelector('small')
+        inputGroup.classList.add('error')
+
+        inputGroup.classList.remove('success')
+        errorMessage.classList.remove('d-none')
+
+        small.innerText = message;
+
+      }
+
+
+      const setSuccess = (input) => {
+        const inputGroup = input.parentElement
+        const small = inputGroup.querySelector('small')
+        small.innerText = '';
+
+        inputGroup.classList.remove('error')
+        errorMessage.classList.add('d-none')
+        inputGroup.classList.add('success')
+      }
+
+    </script>
   </section>
 
   <footer class="footer-container">
@@ -104,15 +257,9 @@
       <div class="footer-info">
         <div>
           <h3>Sociala Medier</h3>
-          <a class="footer-länkar" href="https://www.facebook.com/"
-            >Facebook</a
-          >
-          <a class="footer-länkar" href="https://www.instagram.com/"
-            >Instagram</a
-          >
-          <a class="footer-länkar" href="https://twitter.com/?lang=sv"
-            >Twitter</a
-          >
+          <a class="footer-länkar" href="https://www.facebook.com/">Facebook</a>
+          <a class="footer-länkar" href="https://www.instagram.com/">Instagram</a>
+          <a class="footer-länkar" href="https://twitter.com/?lang=sv">Twitter</a>
         </div>
         <div>
           <h3>Länkar</h3>
@@ -130,12 +277,10 @@
           </p>
         </div>
       </div>
-    
+
     </div>
   </footer>
- 
 
-  <script src="script.js"></script>
 </body>
 
 </html>
