@@ -75,11 +75,11 @@
 }
 .food_info p {
   padding: 20px;
-  background-color: rgb(241, 210, 178);
+  background-color: #ebe9e4;
 }
 
 #star {
-  background-color: rgb(237, 211, 184);
+  background-color: #ebe9e4;
   display: inline;
   padding: 3px;
 }
